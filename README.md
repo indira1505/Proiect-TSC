@@ -85,6 +85,12 @@ Afisaj e-Paper (1.54"): Display de tip "Electronic Ink" care consuma curent doar
 
 Driver Haptic (DRV2605L): Controleaza motorul de vibratii (Shaker) folosind librarii de efecte pre-programate pentru un feedback tactil premium.
 
+Cristal 32 MHz (X1): Esențial pentru funcționarea blocului radio (Bluetooth). Acesta oferă referința de înaltă frecvență necesară pentru stabilitatea semnalului și procesarea rapidă a datelor.
+
+Cristal 32.768 kHz (X2): Componentă critică pentru optimizarea consumului. Acesta permite funcționarea ceasului de timp real (RTC) în modurile de Deep Sleep, menținând precizia timpului cu un consum infim de energie, fără a fi nevoie de oscilatorul intern RC (care este mai puțin precis și consumă mai mult).
+
+Antena: Sistemul utilizează o antenă de tip traseu pe cablaj (Trace Antenna), calculată pentru frecvența de 2.4 GHz (Bluetooth Low Energy).Pentru a asigura o rază de acțiune maximă, s-a respectat o zonă de "Keep-out" (fără cupru) pe toate straturile sub antenă, prevenind astfel atenuarea semnalului.
+
 Interfete de Comunicatie:
 I2C (SDA/SCL): Magistrala principala de senzori unde sunt conectate: BMA421, DRV2605L, BQ25180 si MAX17048.
 
@@ -114,4 +120,14 @@ Consum: Bateria de 250mAh sustine o autonomie estimata de 30-45 zile, avand in v
 | Buton UP   | P1.00        | GPIO        | Pin cu intrerupere pentru navigare meniu (sus).          |
 | Buton DN   | P1.01        | GPIO        | Pin cu intrerupere pentru navigare meniu (jos).          |
 | Buton ENT  | P1.02        | GPIO        | Pin cu intrerupere pentru selectie/confirmare.           |
-| LED 1/2    | P0.13, P0.14 | Output      | LED-uri de stare pentru notificari vizuale rapide.       |
+| LED 1/2    | P0.13, P0.14 | Output      | LED-uri de stare pentru notificari vizuale rapide.   
+
+
+IMAGINI
+
+![alt text](./Images/PCB_3D.png)
+
+![alt text](./Images/exploded_view.png)
+
+![alt text](./Images/final_view.png)
+
